@@ -9,13 +9,12 @@ export default defineConfig({
   reporter: 'html',
   use: {
      baseURL: 'https://www.gamelab.com/games/daily-quick-crossword',
-     headless: false,
+     headless: true,
      screenshot: 'on',
      trace: 'on',
      video: 'on',
   },
 
-  /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium',
@@ -25,11 +24,6 @@ export default defineConfig({
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
-    },
-
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
     },
 
   ],
