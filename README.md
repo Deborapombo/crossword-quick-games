@@ -1,6 +1,6 @@
 # Crosswords Quick Game Test Automation
 
-The scope of this project is to do a e2e automated test to crossword quick game using Playwright framework. 
+The scope of this project is to automate a crossword quick game using Playwright framework. 
 
 ## Installation
 To run the tests, you will need to have Node.js installed:
@@ -9,12 +9,10 @@ To run the tests, you will need to have Node.js installed:
 Make sure you have homebrew on your Mac OS (a package manager for Mac OS) and run:
 ```
 brew install node
-
 ```
 ### Install Node.js on Linux
 ```
 sudo apt install nodejs
-
 ```
 ### Install Node.js on Windows
 
@@ -37,19 +35,14 @@ npx playwright install
 ## Run the tests
 To run the tests you just need to run one of the following commands inside crossword-quick-game folder:
 
-### Run the tests without opening the browser
-```
-npx playwright test tests/quick_game.spec.ts --project=chromium
-```
-
-### Run the tests opening the browser
+### Run the tests 
 ```
 npx playwright test tests/quick_game.spec.ts --project=chromium
 ```
 
 ## Test Suites
 
-The project is covering 1 e2e scenario :
+The project is covering the following scenario :
 
 - Crossword Quick Game
     ✓ Go to Crossword Quick Game -> https://www.gamelab.com/games/daily-quick-crossword 
@@ -71,4 +64,4 @@ In this project you will have 2 ways to check the test results:
     npx playwright test tests/quick_game.spec.ts --project=chromium
     ```
 
-3. There is a screenshot storage folder of the puzzle completion screen. 
+3. There is a screenshot folder with screenshots of the puzzle completion screen. 
