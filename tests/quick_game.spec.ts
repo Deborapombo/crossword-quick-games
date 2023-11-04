@@ -9,7 +9,7 @@ test.beforeEach(async ({ page }) => {
 })
 
 test.describe('Crosswords - Quick game', ()=>{
-    test('Finish a game and submit the score ', async ({ page }) => {     
+    test('Complete a game and submit the score ', async ({ page }) => {     
         test.setTimeout( 2 * 60 * 1000);   
         const homepage = new Homepage(page);
         const game_page = new Game(page);
